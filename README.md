@@ -4,7 +4,7 @@ Jose Cruz, John Nguyen, Hoan Nguyen, Victor Le, and Felix Huang. The goal of thi
 brainstorm and design an application that could be used to solve an existing problem. 
 Documentation for the planning of this project will also be included in this repository.  
 Download the [prototype](https://drive.google.com/open?id=1P3p3eTwzALS2flsT1ww4I2DAq5TkX1mD) we created using JustInMind.  
-View the [sample website](https://cookitapp.github.io/) 
+View the [sample website](http://cookitapplicationproj.me/) 
 
 ## Project Description
 View the project prompt [here](https://github.com/felixthe8/Cook-It/blob/master/Project%20Description%20Fall%202018.pdf)  
@@ -16,7 +16,7 @@ incurs a larger financial cost, as compared to cooking meals at home. When we ea
 ## Getting Started
 Download [JustInMind](https://www.justinmind.com/) to view and simulate the [protoype](https://drive.google.com/open?id=1P3p3eTwzALS2flsT1ww4I2DAq5TkX1mD) on your local machine.   
 To view the sample website, click the link provided:   
-https://cookitapp.github.io/
+http://cookitapplicationproj.me/
 
 ## Built With
 * [JustInMind](https://www.justinmind.com/) - Prototyping software 
