@@ -1,0 +1,33 @@
+/* Desktop width banner  */
+#banner {
+    min-height: 400px;
+    background: url('../images/cooking-large.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10%;
+    width: 100%;
+}
+
+
+/* Tablet width banner */
+@media screen and (max-width: 850px) {
+    #banner {
+        min-height: 400px;
+        background: url('../images/cooking-medium.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+
+/* Mobile width banner */
+@media screen and (max-width: 600px) {
+    #banner {
+        min-height: 300px;
+        background: url('../images/cooking-small.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: +5%;
+    }
+}

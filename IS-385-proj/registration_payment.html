@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cook It! Registration Payment Information</title>
+
+    <link rel="stylesheet" href = "./assets/style/global.css" type="text/css">
+    <link rel="stylesheet" href = "./assets/style/registration-payment.css" type="text/css">
+    <link rel="stylesheet" href = "./assets/style/header.css" type="text/css">
+    <link rel = "stylesheet" href = "./assets/style/footer.css" type="text/css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+        <header>
+                <div class="header-container">
+                  <div class="download" onclick="alertUpcoming()">
+                      <i class="fab fa-app-store-ios fa-2x"></i>
+                      <i class="fab fa-android fa-2x"></i>
+                  </div>
+                    <div class="branding">
+                        <h1>  <a href = "index.html"> <i class="fas fa-utensils"></i></i> Cook It! </a> </h1>
+                    </div>
+                     
+                    <div class="topnav">
+                        <a href="index.html" class="current"> <i class="fas fa-home"></i> Home</a>
+                        <a href="registration.html"> <i class="fas fa-plus-square"></i> Registration</a>
+                        <a href="order.html"> <i class="fas fa-shopping-cart"></i> Order Meal</a>
+                    </div>
+                     
+                </div>
+            </header>
+
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg col-md-4">
+                            <div class="panel panel-default credit-card-box">
+                                <div class="panel-heading display-table" >
+                                    <div class="row display-tr" >
+                                        <h3 class="panel-title display-td" >Payment Details</h3>
+                                        <div class="display-td" >                            
+                                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                                        </div>
+                                    </div>                    
+                                </div>
+                                <div class="panel-body">
+                                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <div class="subscription-choice">
+                                                            <input type="radio" name="subscribe-type">  Normal Account - $7.99/month <br>
+                                                            <input type="radio" name="subscribe-type">  Premium Account - $11.99/month <br>
+                                                    </div>
+
+                                                    <label for="cardNumber">CARD NUMBER</label>
+                                                    <div class="input-group">
+                                                        <input 
+                                                            type="tel"
+                                                            class="form-control"
+                                                            name="cardNumber"
+                                                            placeholder="Valid Card Number"
+                                                            autocomplete="cc-number"
+                                                            required autofocus 
+                                                        />
+                                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                                    </div>
+                                                </div>                            
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-7 col-md-7">
+                                                <div class="form-group">
+                                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                                    <input 
+                                                        type="tel" 
+                                                        class="form-control" 
+                                                        name="cardExpiry"
+                                                        placeholder="MM / YY"
+                                                        autocomplete="cc-exp"
+                                                        required 
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-5 col-md-5 pull-right">
+                                                <div class="form-group">
+                                                    <label for="cardCVC">CV CODE</label>
+                                                    <input 
+                                                        type="tel" 
+                                                        class="form-control"
+                                                        name="cardCVC"
+                                                        placeholder="CVC"
+                                                        autocomplete="cc-csc"
+                                                        required
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <input type="button" class="subscribe btn btn-success btn-lg btn-block" value="Save" onclick = "displayRegistrationSuccess();">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="display:none;">
+                                            <div class="col-xs-12">
+                                                <p class="payment-errors"></p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>            
+                      
+                    <div class="description"> <b>Note: </b>Cook It! requires that you enter 1 form of payment to complete registration</div>
+
+
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.min.js"></script>
+            <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+            <script src="./assets/scripts/alert.js"></script>
+            <script src="./assets/scripts/registration.js"></script>
+</body>
+</html>
